@@ -1,0 +1,15 @@
+#How to uninstall cocoapods
+#https://stackoverflow.com/questions/16427421/how-to-remove-cocoapods-from-a-project
+
+sudo gem install cocoapods-deintegrate cocoapods-clean
+pod deintegrate
+pod cache clean --all
+rm Podfile
+
+#How to uninstall gems used with cocoapods
+#https://stackoverflow.com/questions/8095209/uninstall-all-installed-gems-in-osx
+sudo gem uninstall -aIx
+
+#How to update ruby.
+#https://stackoverflow.com/questions/38194032/how-can-i-update-ruby-version-2-0-0-to-the-latest-version-in-mac-os-x-v10-10-yo
+curl -sSL https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer | bash -s stable
